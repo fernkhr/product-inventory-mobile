@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:product_inventory/screens/list_item.dart';
 import 'package:product_inventory/screens/menu.dart';
 import 'package:product_inventory/screens/saleslist_form.dart';
 
@@ -61,8 +62,19 @@ class LeftDrawer extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) =>
-                      SalesFormPage(), // Navigate to ShopFormPage
+                      const SalesFormPage(), // Navigate to ShopFormPage
                 ),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.shopping_basket),
+            title: const Text('Daftar Item'),
+            onTap: () {
+              // Route menu ke halaman produk
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ItemPage()),
               );
             },
           ),

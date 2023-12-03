@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:pbp_django_auth/pbp_django_auth.dart';
+import 'package:provider/provider.dart';
 // TODO: Impor drawer yang sudah dibuat sebelumnya
 
 class SalesFormPage extends StatefulWidget {
@@ -16,6 +18,7 @@ class _SalesFormPageState extends State<SalesFormPage> {
   String _description = "";
   @override
   Widget build(BuildContext context) {
+    final request = context.watch<CookieRequest>();
     return Scaffold(
       appBar: AppBar(
         title: const Center(

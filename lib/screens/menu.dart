@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:product_inventory/screens/list_item.dart';
 // Impor drawer widget
 import 'package:product_inventory/widgets/left_drawer.dart';
 import 'package:product_inventory/screens/saleslist_form.dart';
@@ -103,9 +104,12 @@ class InventoryCard extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => SalesFormPage(),
+                builder: (context) => const SalesFormPage(),
               ),
             );
+          } else if (item.name == "Lihat Item") {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const ItemPage()));
           }
         },
         child: Container(
