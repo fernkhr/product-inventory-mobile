@@ -87,3 +87,16 @@
 
 ### 5. CLEAN ARCHITECTURE
 Clean Architecture adalah pendekatan pengembangan perangkat lunak yang menekankan pemisahan kode menjadi lapisan-lapisan yang berbeda untuk mempermudah pemeliharaan dan pengujian
+
+# TUGAS 9
+### 1. PENGAMBILAN DATA JSON TANPA MEMBUAT MODEL
+Pengambilan data JSON tanpa membuat model terlebih dahulu dapat dilakukan dengan cara membaca JSON sebagai struktur data yang bersifat dinamis. Namun, pembuatan model sebelum melakukan pengambilan data JSON akan lebih baik karena mempermudah developer dalam memahami, mengelola, dan menggunakan data JSON secara konsisten
+
+### 2. COOKIEREQUEST
+CookieRequest adalah permintaan HTTP yang menyertakan informasi cookie. Memberikan instance CookieRequest ke semua komponen di aplikasi Flutter memungkinkan penggunaan informasi cookie secara konsisten di seluruh aplikasi, seperti untuk otentikasi, penyimpanan status login, atau interaksi dengan server
+
+### 3. PENGAMBILAN DATA JSON UNTUK FLUTTER
+Langkah pertama adalah mengambil data JSON melalui permintaan HTTP atau dari penyimpanan lokal. Kemudian, data JSON tersebut diurai menjadi struktur data Dart menggunakan method `json.decode()`. Struktur data tersebut dapat digunakan untuk membangun tampilan di Flutter
+
+### 4. AUTENTIKASI
+Flutter mengirimkan permintaan autentikasi ke server Django menggunakan permintaan HTTP. Kemudian, Django memproses permintaan tersebut dan mengautentikasi pengguna. Jika berhasil, Django akan mengirimkan respons berupa token atau informasi autentikasi. Flutter akan menyimpan token tersebut dan menggunakannya untuk permintaan selanjutnya untuk mengakses data yang memerlukan otorisasi. Setelah otentikasi berhasil, Flutter akan menampilkan menu atau page yang sesuai berdasarkan respons dari Django 
